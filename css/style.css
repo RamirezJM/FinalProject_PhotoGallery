@@ -1,0 +1,48 @@
+body {
+  margin: 2%;
+  border: 1px solid black;
+  background-image: url('../images/background.jpg');
+  background-color: #b3b3b3;
+}
+
+#image {
+  line-height: 500px; 
+  width: 50%;
+  border: 2px solid rgb(88, 231, 95);
+  border-radius: 20px;
+  margin: 0 auto;
+  background-color: darkslategray;
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: 2rem;
+  color: rgb(88, 231, 95);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+
+}
+
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-items: center;
+}
+
+.container img {
+  border: solid 2px;
+  width: 80%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+
+}
+
+.container img:hover,
+img:focus {
+  transform: scale(1.2);
+  border: solid 2px red;
+}
